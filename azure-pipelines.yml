@@ -7,12 +7,13 @@ pr:
 
 pool:
   vmImage: 'Ubuntu-16.04'
-  strategy:
-    matrix:
-      Python36: 
-        python.version: '3.6'
-      Python37:
-        python.version: '3.7'
+
+strategy:
+  matrix:
+    Python36: 
+      python.version: '3.6'
+    Python37:
+      python.version: '3.7'
 
 steps:
   - task: UsePythonVersion@0
