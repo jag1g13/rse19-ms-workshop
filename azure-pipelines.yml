@@ -8,4 +8,5 @@ pr:
 pool:
   vmImage: 'Ubuntu-16.04'
 
-script: echo "Hello World!"
+steps:
+  - script: echo "Hello World!"
